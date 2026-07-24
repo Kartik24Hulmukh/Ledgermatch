@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ledgermatch.local/schemas/review-ledger-event-1.0.json",
+  "title": "LedgerMatch Review Ledger Event",
+  "type": "object",
+  "required": ["schema_version", "sequence", "previous_hash", "run_id", "reviewer", "recorded_at", "txn_id", "decision", "invoice_ids", "reason_code", "note", "event_hash"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "sequence": {"type": "integer", "minimum": 1},
+    "previous_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "run_id": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "reviewer": {"type": "string", "minLength": 1, "maxLength": 120},
+    "recorded_at": {"type": "string", "format": "date-time"},
+    "txn_id": {"type": "string", "minLength": 1},
+    "decision": {"enum": ["approve_exact", "reject", "defer"]},
+    "invoice_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "reason_code": {"type": "string", "pattern": "^[A-Z0-9_]{2,50}$"},
+    "note": {"type": "string", "maxLength": 500},
+    "event_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  },
+  "additionalProperties": false
+}

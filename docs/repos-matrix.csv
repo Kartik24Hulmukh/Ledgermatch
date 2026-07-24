@@ -1,0 +1,146 @@
+category,repository,priority,verdict,LedgerMatch use
+Agent / multi-agent / computer-use / orchestration,https://github.com/skalesapp/skales.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/langgenius/dify.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/aaif-goose/goose.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/camel-ai/owl.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/camel-ai/camel.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/OpenHands/OpenHands.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/FoundationAgents/OpenManus.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/NousResearch/hermes-agent.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/code-yeongyu/oh-my-openagent.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/2FastLabs/agent-squad.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/mco-org/squad.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/eigent-ai/eigent.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/Panniantong/Agent-Reach.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/alibaba/page-agent.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/kagent-dev/kagent.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/OpenBMB/PilotDeck.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/stophobia/deerflow2.0-enhanced.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/ruvnet/ruflo.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/ashishpatel26/500-AI-Agents-Projects.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/PacktPublishing/30-Agents-Every-AI-Engineer-Must-Build.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/AmrDab/clawdcursor.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/Yeachan-Heo/claw-code.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/Yeachan-Heo/gajae-code.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Agent / multi-agent / computer-use / orchestration,https://github.com/Unclecheng-li/VulnClaw.git,P4,Do not adopt runtime,Borrow plan-review-verify process patterns only; agents must not decide financial matches.
+Browser / automation / vision agents,https://github.com/browser-use/browser-use.git,P3,Avoid runtime,Browser automation is fragile for bank/accounting portals; Playwright is the exception for tests.
+Browser / automation / vision agents,https://github.com/microsoft/playwright.git,P0,Adopt now,"Browser E2E, accessibility, download and local-web security regression tests."
+Browser / automation / vision agents,https://github.com/Skyvern-AI/skyvern.git,P3,Avoid runtime,Browser automation is fragile for bank/accounting portals; Playwright is the exception for tests.
+Browser / automation / vision agents,https://github.com/browserbase/stagehand.git,P3,Avoid runtime,Browser automation is fragile for bank/accounting portals; Playwright is the exception for tests.
+Browser / automation / vision agents,https://github.com/LvcidPsyche/auto-browser.git,P3,Avoid runtime,Browser automation is fragile for bank/accounting portals; Playwright is the exception for tests.
+Browser / automation / vision agents,https://github.com/daijro/camoufox.git,P3,Avoid runtime,Browser automation is fragile for bank/accounting portals; Playwright is the exception for tests.
+Browser / automation / vision agents,https://github.com/OctoMind-dev/debugtopus.git,P3,Avoid runtime,Browser automation is fragile for bank/accounting portals; Playwright is the exception for tests.
+Browser / automation / vision agents,https://github.com/OctoMind-dev/octomind-mcp.git,P3,Avoid runtime,Browser automation is fragile for bank/accounting portals; Playwright is the exception for tests.
+Browser / automation / vision agents,https://github.com/alwaysmeticulous/meticulous-sdk.git,P3,Avoid runtime,Browser automation is fragile for bank/accounting portals; Playwright is the exception for tests.
+Dev environments / parallel coding / sandboxes,https://github.com/devspace-sh/devspace.git,P3,Development only,"Contributor isolation patterns, not end-user functionality."
+Dev environments / parallel coding / sandboxes,https://github.com/Waishnav/devspace.git,P3,Development only,"Contributor isolation patterns, not end-user functionality."
+Dev environments / parallel coding / sandboxes,https://github.com/daytonaio/daytona.git,P3,Development only,Reproducible dev workspace patterns; unnecessary for end users.
+Dev environments / parallel coding / sandboxes,https://github.com/johannesjo/parallel-code.git,P3,Development only,"Contributor isolation patterns, not end-user functionality."
+Dev environments / parallel coding / sandboxes,https://github.com/opensandbox-group/OpenSandbox.git,P2,Development only,"Isolated contributor/test environments, not reconciliation runtime."
+Dev environments / parallel coding / sandboxes,https://github.com/dyad-sh/dyad.git,P3,Development only,"Contributor isolation patterns, not end-user functionality."
+Dev environments / parallel coding / sandboxes,https://github.com/tmux/tmux.git,P3,Development only,"Contributor isolation patterns, not end-user functionality."
+Dev environments / parallel coding / sandboxes,https://github.com/manaflow-ai/cmux.git,P3,Development only,"Contributor isolation patterns, not end-user functionality."
+RAG / memory / knowledge / OCR / docs,https://github.com/infiniflow/ragflow.git,P3,Do not adopt runtime,RAG is not authoritative matching or a financial system of record.
+RAG / memory / knowledge / OCR / docs,https://github.com/TencentCloud/TencentDB-Agent-Memory.git,P3,Avoid core runtime,Study ingestion/provenance patterns; matching must stay deterministic.
+RAG / memory / knowledge / OCR / docs,https://github.com/inkeep/open-knowledge.git,P3,Avoid core runtime,Study ingestion/provenance patterns; matching must stay deterministic.
+RAG / memory / knowledge / OCR / docs,https://github.com/lumina-ai-inc/chunkr.git,P2,Benchmark later,Layout-aware extraction benchmark for PDF statements after CSV evidence.
+RAG / memory / knowledge / OCR / docs,https://github.com/baidu/Unlimited-OCR.git,P2,Benchmark later,OCR candidate; preserve page/bounding-box provenance.
+RAG / memory / knowledge / OCR / docs,https://github.com/allenai/olmocr.git,P2,Benchmark later,OCR benchmark for scanned statements; never authoritative without balance checks.
+RAG / memory / knowledge / OCR / docs,https://github.com/paperless-ngx/paperless-ngx.git,P2,Study patterns,"Document ingestion, retention and local deployment patterns."
+RAG / memory / knowledge / OCR / docs,https://github.com/karakeep-app/karakeep.git,P3,Avoid core runtime,Study ingestion/provenance patterns; matching must stay deterministic.
+RAG / memory / knowledge / OCR / docs,https://github.com/lfnovo/open-notebook.git,P3,Avoid core runtime,Study ingestion/provenance patterns; matching must stay deterministic.
+RAG / memory / knowledge / OCR / docs,https://github.com/anyproto/anytype-ts.git,P3,Avoid core runtime,Study ingestion/provenance patterns; matching must stay deterministic.
+RAG / memory / knowledge / OCR / docs,https://github.com/garrytan/gbrain.git,P3,Avoid core runtime,Study ingestion/provenance patterns; matching must stay deterministic.
+Voice / video / multimodal,https://github.com/pipecat-ai/pipecat.git,P4,Irrelevant,No evidenced reconciliation use case.
+Voice / video / multimodal,https://github.com/OpenBMB/VoxCPM.git,P4,Irrelevant,No evidenced reconciliation use case.
+Voice / video / multimodal,https://github.com/bradautomates/claude-video.git,P4,Irrelevant,No evidenced reconciliation use case.
+Security / trust / scanning / compliance,https://github.com/github/codeql.git,P0,Adopt now,Static analysis in CI with least-privilege workflow permissions.
+Security / trust / scanning / compliance,https://github.com/returntocorp/semgrep.git,P0,Adopt now,"Custom rules for unsafe HTML, network calls, money floats and insecure server binding."
+Security / trust / scanning / compliance,https://github.com/gitleaks/gitleaks.git,P0,Adopt now,Secret and financial-data canary scanning in repository history and artifacts.
+Security / trust / scanning / compliance,https://github.com/snyk/cli.git,P1,Evaluate,Security tooling; adopt only if it covers a named gate.
+Security / trust / scanning / compliance,https://github.com/zaproxy/zaproxy.git,P1,Before hosted preview,DAST only after an authenticated staging boundary exists.
+Security / trust / scanning / compliance,https://github.com/microsoft/RAMPART.git,P1,Evaluate,Security tooling; adopt only if it covers a named gate.
+Security / trust / scanning / compliance,https://github.com/mukul975/Anthropic-Cybersecurity-Skills.git,P1,Evaluate,Security tooling; adopt only if it covers a named gate.
+Security / trust / scanning / compliance,https://github.com/affaan-m/ECC.git,P1,Evaluate,Security tooling; adopt only if it covers a named gate.
+Testing / QA / observability / reliability,https://github.com/vitest-dev/vitest.git,P3,Only with TS UI,Current project is Python; no immediate value.
+Testing / QA / observability / reliability,https://github.com/testing-library/react-testing-library.git,P2,Evaluate selectively,Useful only for a specific test gap; avoid duplicate stacks.
+Testing / QA / observability / reliability,https://github.com/storybookjs/storybook.git,P3,Only with component UI,Useful only after a componentized frontend exists.
+Testing / QA / observability / reliability,https://github.com/mswjs/msw.git,P2,Evaluate selectively,Useful only for a specific test gap; avoid duplicate stacks.
+Testing / QA / observability / reliability,https://github.com/pact-foundation/pact-js.git,P3,Only with external APIs,No current service contracts to justify it.
+Testing / QA / observability / reliability,https://github.com/testcontainers/testcontainers-node.git,P2,Evaluate selectively,Useful only for a specific test gap; avoid duplicate stacks.
+Testing / QA / observability / reliability,https://github.com/applitools/eyes.sdk.javascript.git,P2,Evaluate selectively,Useful only for a specific test gap; avoid duplicate stacks.
+Testing / QA / observability / reliability,https://github.com/chromaui/chromatic-cli.git,P2,Evaluate selectively,Useful only for a specific test gap; avoid duplicate stacks.
+Testing / QA / observability / reliability,https://github.com/percy/cli.git,P2,Evaluate selectively,Useful only for a specific test gap; avoid duplicate stacks.
+Testing / QA / observability / reliability,https://github.com/replayio/replay-cli.git,P2,Evaluate selectively,Useful only for a specific test gap; avoid duplicate stacks.
+Testing / QA / observability / reliability,https://github.com/artilleryio/artillery.git,P2,Choose one load tool,Alternative to k6; do not adopt both.
+Testing / QA / observability / reliability,https://github.com/grafana/k6.git,P1,After safety fixes,Bounded load and slow-client tests for local web mode.
+Testing / QA / observability / reliability,https://github.com/grafana/xk6-disruptor.git,P2,Evaluate selectively,Useful only for a specific test gap; avoid duplicate stacks.
+Testing / QA / observability / reliability,https://github.com/clinicjs/node-clinic.git,P2,Evaluate selectively,Useful only for a specific test gap; avoid duplicate stacks.
+Testing / QA / observability / reliability,https://github.com/GoogleChrome/lighthouse-ci.git,P2,Evaluate selectively,Useful only for a specific test gap; avoid duplicate stacks.
+Testing / QA / observability / reliability,https://github.com/checkly/checkly-cli.git,P2,Evaluate selectively,Useful only for a specific test gap; avoid duplicate stacks.
+Testing / QA / observability / reliability,https://github.com/grafana/grafana.git,P2,Evaluate selectively,Useful only for a specific test gap; avoid duplicate stacks.
+Testing / QA / observability / reliability,https://github.com/open-telemetry/opentelemetry-js.git,P2,Later,Observability patterns; avoid collecting financial values.
+Testing / QA / observability / reliability,https://github.com/getsentry/sentry-javascript.git,P2,Later with redaction,Error telemetry only with strict financial-data scrubbing.
+Testing / QA / observability / reliability,https://github.com/Helicone/helicone.git,P2,Evaluate selectively,Useful only for a specific test gap; avoid duplicate stacks.
+Testing / QA / observability / reliability,https://github.com/comet-ml/opik.git,P3,Do not adopt runtime,LLM evaluation is unnecessary until advisory has validated use.
+Testing / QA / observability / reliability,https://github.com/dequelabs/axe-core.git,P0,Adopt now,Accessibility regression tests for the review UI and reports.
+UI / builders / frameworks / routing / schemas,https://github.com/refinedev/refine.git,P3,Prototype only,Possible exception-queue admin UI; avoid framework migration before pilots.
+UI / builders / frameworks / routing / schemas,https://github.com/colinhacks/zod.git,P2,If TypeScript UI,Typed boundary validation for a future web client.
+UI / builders / frameworks / routing / schemas,https://github.com/decolua/9router.git,P3,Later,Potential future UI reference; no core matching value now.
+UI / builders / frameworks / routing / schemas,https://github.com/halo-dev/halo.git,P3,Later,Potential future UI reference; no core matching value now.
+UI / builders / frameworks / routing / schemas,https://github.com/context-labs/HALO.git,P3,Later,Potential future UI reference; no core matching value now.
+UI / builders / frameworks / routing / schemas,https://github.com/nexu-io/html-anything.git,P3,Later,Potential future UI reference; no core matching value now.
+UI / builders / frameworks / routing / schemas,https://github.com/vibeflowing-inc/vibe_figma.git,P3,Later,Potential future UI reference; no core matching value now.
+UI / builders / frameworks / routing / schemas,https://github.com/VILA-Lab/FigMirror.git,P3,Later,Potential future UI reference; no core matching value now.
+Local models / infra / special systems,https://github.com/ggml-org/llama.cpp.git,P3,Optional later,Local advisory text normalization only; never authoritative matching.
+Local models / infra / special systems,https://github.com/baidu-baige/LoongForge.git,P3,Study only,No direct evidenced need for the current wedge.
+Local models / infra / special systems,https://github.com/syncthing/syncthing.git,P3,Study only,Local-first sync patterns; financial workspace sync is out of initial scope.
+Local models / infra / special systems,https://github.com/ghostwright/ghost-os.git,P3,Study only,No direct evidenced need for the current wedge.
+Local models / infra / special systems,https://github.com/EvoMap/evolver.git,P3,Study only,No direct evidenced need for the current wedge.
+Local models / infra / special systems,https://github.com/hamishivi/tmax.git,P3,Study only,No direct evidenced need for the current wedge.
+Local models / infra / special systems,https://github.com/ianarawjo/ChainForge.git,P3,Study only,No direct evidenced need for the current wedge.
+Local models / infra / special systems,https://github.com/paperclipai/paperclip.git,P3,Study only,No direct evidenced need for the current wedge.
+Local models / infra / special systems,https://github.com/opensandbox-group/OpenSandbox.git,P2,Development only,"Isolated contributor/test environments, not reconciliation runtime."
+Prompt/security/offensive research \& oddballs,https://github.com/elder-plinius/T3MP3ST.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+Prompt/security/offensive research \& oddballs,https://github.com/elder-plinius/OBLITERATUS.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+Prompt/security/offensive research \& oddballs,https://github.com/elder-plinius/GLOSSOPETRAE.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+Prompt/security/offensive research \& oddballs,https://github.com/zzet/gortex.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+Prompt/security/offensive research \& oddballs,https://github.com/Kuberwastaken/claurst.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+Prompt/security/offensive research \& oddballs,https://github.com/can1357/oh-my-pi.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+Prompt/security/offensive research \& oddballs,https://github.com/deonmenezes/mantishack.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+Prompt/security/offensive research \& oddballs,https://github.com/bmad-code-org/BMAD-METHOD.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+Prompt/security/offensive research \& oddballs,https://github.com/gsd-build/get-shit-done.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+Prompt/security/offensive research \& oddballs,https://github.com/safishamsi/graphify.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+Prompt/security/offensive research \& oddballs,https://github.com/latent-spaces/brag.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+Prompt/security/offensive research \& oddballs,https://github.com/koala73/worldmonitor.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+Prompt/security/offensive research \& oddballs,https://github.com/tinyfish-io/bigset.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+Prompt/security/offensive research \& oddballs,https://github.com/headroomlabs-ai/headroom.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+Prompt/security/offensive research \& oddballs,https://github.com/DietrichGebert/ponytail.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+Prompt/security/offensive research \& oddballs,https://github.com/teamchong/pxpipe.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+Prompt/security/offensive research \& oddballs,https://github.com/MHSanaei/3x-ui.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+Prompt/security/offensive research \& oddballs,https://github.com/anthropics/knowledge-work-plugins.git,P4,Reject,"No product value; elevated safety, maintenance or provenance risk."
+extra reference for depth research:,https://github.com/facebook/astryx.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/XiaoYouChR/Ghost-Downloader-3.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/snapotter-hq/SnapOtter.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/gotify/server.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/usestrix/strix.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/avinash201199/founders-kit.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/ZSeven-W/openpencil.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/steipete/CodexBar.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/TechyCSR/OpenCluely.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/IceWhaleTech/CasaOS.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/FoundationAgents/OpenManus.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/TencentCloud/TencentDB-Agent-Memory.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/alibaba/page-agent.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/pinchtab/pinchtab.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/zzet/gortex.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/cobusgreyling/loop-engineering.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/alibaba/zvec.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/Next-Flip/Momentum-Firmware.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/DeusData/codebase-memory-mcp.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/mukul975/Anthropic-Cybersecurity-Skills.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/Avaiga/taipy.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/mvanhorn/last30days-skill.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/tim-osterhus/millrace.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/diodeme/Gold-Band.git,P3,Study only,No direct evidenced need for the current wedge.
+extra reference for depth research:,https://github.com/ChaoYue0307/awesome-graph-engineering.git,P3,Study only,No direct evidenced need for the current wedge.
