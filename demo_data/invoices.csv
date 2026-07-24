@@ -1,0 +1,334 @@
+Invoice No,Customer,Date,Amount,Status
+INV-2025-0006,Ironwood Joinery,2025-01-06,3407.99,Open
+INV-2025-0012,Gridline Electrical,2025-01-08,1734.25,Open
+INV-2025-0015,Ironwood Joinery,2025-01-08,4953.99,Open
+INV-2025-0001,Acme Interiors,2025-01-09,4656.00,Open
+INV-2025-0005,Delta Fabrication,2025-01-12,8429.75,Open
+INV-2025-0011,Maplewood Property,2025-01-12,5664.00,Open
+INV-2025-0017,Lumen Marketing,2025-01-12,1289.00,Open
+INV-2025-0002,Corewave Media,2025-01-13,1829.99,Open
+INV-2025-0020,Harbor & Sons Plumbing,2025-01-14,6127.00,Open
+INV-2025-0004,Acme Interiors,2025-01-19,638.00,Open
+INV-2025-0010,Fernhill Landscaping,2025-01-19,4702.00,Open
+INV-2025-0008,Juniper Design Co,2025-01-20,4707.00,Open
+INV-2025-0016,Orchid Wellness,2025-01-25,6075.75,Open
+INV-2025-0007,Lumen Marketing,2025-01-26,7023.00,Open
+INV-2025-0018,Delta Fabrication,2025-01-27,4891.00,Open
+INV-2025-0003,Orchid Wellness,2025-01-29,1574.75,Open
+INV-2025-0014,Harbor & Sons Plumbing,2025-01-29,2195.50,Open
+INV-2025-0009,Maplewood Property,2025-01-30,2765.99,Open
+INV-2025-0013,Fernhill Landscaping,2025-02-02,4483.00,Open
+INV-2025-0019,Delta Fabrication,2025-02-02,1804.50,Open
+INV-2025-0035,Maplewood Property,2025-02-07,921.00,Open
+INV-2025-0036,Kestrel Logistics,2025-02-09,2771.99,Open
+INV-2025-0034,Corewave Media,2025-02-12,8498.50,Open
+INV-2025-0028,Bluepeak Consulting,2025-02-13,3606.75,Open
+INV-2025-0031,Corewave Media,2025-02-13,4190.99,Open
+INV-2025-0026,Northbay Catering,2025-02-15,1066.00,Open
+INV-2025-0021,Delta Fabrication,2025-02-16,4524.99,Open
+INV-2025-0037,Juniper Design Co,2025-02-18,1190.50,Open
+INV-2025-0024,Gridline Electrical,2025-02-19,4572.99,Open
+INV-2025-0030,Gridline Electrical,2025-02-20,7667.00,Open
+INV-2025-0032,Ironwood Joinery,2025-02-22,4454.99,Open
+INV-2025-0033,Gridline Electrical,2025-02-23,6693.25,Open
+INV-2025-0023,Corewave Media,2025-02-25,4160.00,Open
+INV-2025-0022,Kestrel Logistics,2025-02-26,1319.75,Open
+INV-2025-0025,Ironwood Joinery,2025-02-27,3748.99,Open
+INV-2025-0029,Fernhill Landscaping,2025-02-27,3633.99,Open
+INV-2025-0027,Acme Interiors,2025-03-03,5318.50,Open
+INV-2025-0050,Delta Fabrication,2025-03-08,1440.00,Open
+INV-2025-0042,Harbor & Sons Plumbing,2025-03-12,203.99,Open
+INV-2025-0046,Corewave Media,2025-03-13,6276.00,Open
+INV-2025-0045,Northbay Catering,2025-03-16,8467.75,Open
+INV-2025-0041,Bluepeak Consulting,2025-03-17,4958.50,Open
+INV-2025-0048,Harbor & Sons Plumbing,2025-03-17,469.00,Open
+INV-2025-0049,Orchid Wellness,2025-03-18,5188.00,Open
+INV-2025-0053,Ironwood Joinery,2025-03-22,2855.25,Open
+INV-2025-0044,Orchid Wellness,2025-03-23,1893.99,Open
+INV-2025-0054,Northbay Catering,2025-03-23,7082.00,Open
+INV-2025-0040,Maplewood Property,2025-03-24,4521.99,Open
+INV-2025-0047,Maplewood Property,2025-03-24,159.75,Open
+INV-2025-0055,Maplewood Property,2025-03-24,3445.99,Open
+INV-2025-0038,Harbor & Sons Plumbing,2025-03-26,4269.75,Open
+INV-2025-0043,Eastgate Clinic,2025-03-30,8351.00,Open
+INV-2025-0051,Harbor & Sons Plumbing,2025-03-30,1283.75,Open
+INV-2025-0052,Corewave Media,2025-03-31,2253.99,Open
+INV-2025-0039,Acme Interiors,2025-04-03,2026.99,Open
+INV-2025-0062,Northbay Catering,2025-04-07,5563.00,Open
+INV-2025-0069,Kestrel Logistics,2025-04-07,1762.00,Open
+INV-2025-0067,Bluepeak Consulting,2025-04-09,7212.25,Open
+INV-2025-0058,Bluepeak Consulting,2025-04-13,5689.00,Open
+INV-2025-0060,Acme Interiors,2025-04-13,1313.99,Open
+INV-2025-0071,Delta Fabrication,2025-04-13,3266.75,Open
+INV-2025-0056,Kestrel Logistics,2025-04-18,6268.50,Open
+INV-2025-0070,Lumen Marketing,2025-04-18,5709.00,Open
+INV-2025-0068,Gridline Electrical,2025-04-19,7801.99,Open
+INV-2025-0072,Corewave Media,2025-04-20,7062.00,Open
+INV-2025-0064,Delta Fabrication,2025-04-21,2317.99,Open
+INV-2025-0057,Harbor & Sons Plumbing,2025-04-22,2132.00,Open
+INV-2025-0063,Delta Fabrication,2025-04-22,4712.99,Open
+INV-2025-0059,Ironwood Joinery,2025-04-24,3920.75,Open
+INV-2025-0065,Juniper Design Co,2025-04-24,7894.00,Open
+INV-2025-0061,Acme Interiors,2025-04-26,3900.00,Open
+INV-2025-0066,Harbor & Sons Plumbing,2025-05-01,6819.00,Open
+INV-2025-0088,Orchid Wellness,2025-05-09,4183.75,Open
+INV-2025-0082,Eastgate Clinic,2025-05-12,3716.00,Open
+INV-2025-0084,Acme Interiors,2025-05-16,971.75,Open
+INV-2025-0079,Acme Interiors,2025-05-18,6546.25,Open
+INV-2025-0077,Harbor & Sons Plumbing,2025-05-19,8036.00,Open
+INV-2025-0081,Lumen Marketing,2025-05-19,8123.00,Open
+INV-2025-0073,Delta Fabrication,2025-05-20,1385.50,Open
+INV-2025-0085,Ironwood Joinery,2025-05-21,2729.00,Open
+INV-2025-0086,Bluepeak Consulting,2025-05-22,3194.00,Open
+INV-2025-0083,Lumen Marketing,2025-05-24,1148.99,Open
+INV-2025-0087,Bluepeak Consulting,2025-05-25,4003.50,Open
+INV-2025-0089,Acme Interiors,2025-05-25,1493.50,Open
+INV-2025-0075,Ironwood Joinery,2025-05-26,391.00,Open
+INV-2025-0076,Northbay Catering,2025-05-30,4022.00,Open
+INV-2025-0074,Northbay Catering,2025-05-31,1754.00,Open
+INV-2025-0080,Maplewood Property,2025-05-31,7604.25,Open
+INV-2025-0078,Gridline Electrical,2025-06-02,1110.00,Open
+INV-2025-0109,Fernhill Landscaping,2025-06-05,2293.99,Open
+INV-2025-0102,Orchid Wellness,2025-06-08,2350.25,Open
+INV-2025-0103,Orchid Wellness,2025-06-08,1903.99,Open
+INV-2025-0097,Orchid Wellness,2025-06-09,5868.00,Open
+INV-2025-0091,Kestrel Logistics,2025-06-11,5297.00,Open
+INV-2025-0098,Fernhill Landscaping,2025-06-12,4819.00,Open
+INV-2025-0092,Gridline Electrical,2025-06-13,2294.99,Open
+INV-2025-0095,Juniper Design Co,2025-06-19,1788.00,Open
+INV-2025-0099,Northbay Catering,2025-06-19,5106.75,Open
+INV-2025-0107,Eastgate Clinic,2025-06-20,982.00,Open
+INV-2025-0096,Delta Fabrication,2025-06-22,8438.25,Open
+INV-2025-0104,Corewave Media,2025-06-22,4612.25,Open
+INV-2025-0090,Juniper Design Co,2025-06-23,5333.25,Open
+INV-2025-0105,Delta Fabrication,2025-06-24,5767.00,Open
+INV-2025-0093,Eastgate Clinic,2025-06-25,7641.25,Open
+INV-2025-0108,Gridline Electrical,2025-06-25,4683.00,Open
+INV-2025-0106,Kestrel Logistics,2025-06-26,4475.75,Open
+INV-2025-0094,Orchid Wellness,2025-06-29,1338.00,Open
+INV-2025-0100,Kestrel Logistics,2025-06-30,278.99,Open
+INV-2025-0101,Ironwood Joinery,2025-07-01,5055.99,Open
+INV-2025-0120,Corewave Media,2025-07-05,5592.50,Open
+INV-2025-0126,Kestrel Logistics,2025-07-05,3314.50,Open
+INV-2025-0113,Northbay Catering,2025-07-06,6199.75,Open
+INV-2025-0115,Eastgate Clinic,2025-07-06,6124.00,Open
+INV-2025-0112,Orchid Wellness,2025-07-07,2592.75,Open
+INV-2025-0117,Fernhill Landscaping,2025-07-08,6808.75,Open
+INV-2025-0110,Lumen Marketing,2025-07-10,7389.75,Open
+INV-2025-0122,Maplewood Property,2025-07-10,1921.50,Open
+INV-2025-0124,Northbay Catering,2025-07-11,7691.25,Open
+INV-2025-0125,Northbay Catering,2025-07-14,3878.00,Open
+INV-2025-0116,Delta Fabrication,2025-07-16,4238.99,Open
+INV-2025-0114,Corewave Media,2025-07-22,7191.00,Open
+INV-2025-0111,Gridline Electrical,2025-07-27,308.00,Open
+INV-2025-0118,Corewave Media,2025-07-28,4028.00,Open
+INV-2025-0119,Maplewood Property,2025-07-30,3050.50,Open
+INV-2025-0121,Kestrel Logistics,2025-07-30,4215.25,Open
+INV-2025-0123,Acme Interiors,2025-08-01,7861.00,Open
+INV-2025-0130,Orchid Wellness,2025-08-07,4429.00,Open
+INV-2025-0135,Eastgate Clinic,2025-08-10,877.99,Open
+INV-2025-0127,Northbay Catering,2025-08-12,1287.25,Open
+INV-2025-0139,Ironwood Joinery,2025-08-13,5217.99,Open
+INV-2025-0141,Ironwood Joinery,2025-08-13,2235.00,Open
+INV-2025-0138,Kestrel Logistics,2025-08-14,2191.99,Open
+INV-2025-0128,Kestrel Logistics,2025-08-15,8496.50,Open
+INV-2025-0136,Acme Interiors,2025-08-17,3378.25,Open
+INV-2025-0137,Bluepeak Consulting,2025-08-17,5559.75,Open
+INV-2025-0140,Fernhill Landscaping,2025-08-17,6742.99,Open
+INV-2025-0142,Kestrel Logistics,2025-08-17,6361.99,Open
+INV-2025-0134,Bluepeak Consulting,2025-08-20,6461.75,Open
+INV-2025-0131,Eastgate Clinic,2025-08-22,776.00,Open
+INV-2025-0132,Gridline Electrical,2025-08-23,5813.99,Open
+INV-2025-0129,Northbay Catering,2025-08-25,5575.00,Open
+INV-2025-0143,Orchid Wellness,2025-08-27,3001.75,Open
+INV-2025-0133,Fernhill Landscaping,2025-08-29,7299.75,Open
+INV-2025-0152,Acme Interiors,2025-09-03,4161.50,Open
+INV-2025-0149,Eastgate Clinic,2025-09-05,5641.00,Open
+INV-2025-0160,Maplewood Property,2025-09-07,7762.99,Open
+INV-2025-0156,Corewave Media,2025-09-10,240.00,Open
+INV-2025-0144,Gridline Electrical,2025-09-12,156.25,Open
+INV-2025-0145,Delta Fabrication,2025-09-12,7193.75,Open
+INV-2025-0151,Delta Fabrication,2025-09-12,3412.00,Open
+INV-2025-0154,Orchid Wellness,2025-09-16,3335.99,Open
+INV-2025-0147,Harbor & Sons Plumbing,2025-09-17,3651.75,Open
+INV-2025-0148,Maplewood Property,2025-09-18,2930.99,Open
+INV-2025-0161,Ironwood Joinery,2025-09-19,5348.50,Open
+INV-2025-0159,Delta Fabrication,2025-09-20,2138.50,Open
+INV-2025-0146,Kestrel Logistics,2025-09-22,5429.50,Open
+INV-2025-0153,Northbay Catering,2025-09-22,1343.50,Open
+INV-2025-0162,Northbay Catering,2025-09-22,8420.50,Open
+INV-2025-0155,Gridline Electrical,2025-09-25,8249.50,Open
+INV-2025-0157,Gridline Electrical,2025-09-27,3735.00,Open
+INV-2025-0158,Lumen Marketing,2025-09-28,7761.00,Open
+INV-2025-0150,Maplewood Property,2025-09-29,3998.99,Open
+INV-2025-0179,Gridline Electrical,2025-10-03,5657.99,Open
+INV-2025-0173,Delta Fabrication,2025-10-04,7033.50,Open
+INV-2025-0169,Corewave Media,2025-10-05,2621.00,Open
+INV-2025-0181,Northbay Catering,2025-10-08,7807.00,Open
+INV-2025-0171,Bluepeak Consulting,2025-10-09,6947.50,Open
+INV-2025-0178,Eastgate Clinic,2025-10-10,7290.50,Open
+INV-2025-0168,Fernhill Landscaping,2025-10-11,5388.75,Open
+INV-2025-0176,Maplewood Property,2025-10-12,6539.50,Open
+INV-2025-0172,Ironwood Joinery,2025-10-13,7783.50,Open
+INV-2025-0170,Lumen Marketing,2025-10-15,2653.99,Open
+INV-2025-0175,Harbor & Sons Plumbing,2025-10-15,246.25,Open
+INV-2025-0167,Bluepeak Consulting,2025-10-17,4831.00,Open
+INV-2025-0166,Kestrel Logistics,2025-10-18,4069.25,Open
+INV-2025-0163,Harbor & Sons Plumbing,2025-10-20,2757.99,Open
+INV-2025-0177,Lumen Marketing,2025-10-20,3763.50,Open
+INV-2025-0183,Juniper Design Co,2025-10-21,594.00,Open
+INV-2025-0182,Ironwood Joinery,2025-10-22,591.50,Open
+INV-2025-0180,Maplewood Property,2025-10-24,6774.99,Open
+INV-2025-0165,Delta Fabrication,2025-10-27,4693.75,Open
+INV-2025-0174,Juniper Design Co,2025-10-27,470.75,Open
+INV-2025-0164,Harbor & Sons Plumbing,2025-10-30,7523.25,Open
+INV-2025-0185,Eastgate Clinic,2025-11-03,6361.25,Open
+INV-2025-0192,Maplewood Property,2025-11-03,658.00,Open
+INV-2025-0194,Delta Fabrication,2025-11-06,2218.50,Open
+INV-2025-0186,Harbor & Sons Plumbing,2025-11-08,5505.25,Open
+INV-2025-0193,Northbay Catering,2025-11-08,483.75,Open
+INV-2025-0191,Kestrel Logistics,2025-11-09,1274.99,Open
+INV-2025-0198,Bluepeak Consulting,2025-11-11,570.25,Open
+INV-2025-0184,Corewave Media,2025-11-15,7714.00,Open
+INV-2025-0199,Kestrel Logistics,2025-11-20,6299.50,Open
+INV-2025-0197,Juniper Design Co,2025-11-21,2026.00,Open
+INV-2025-0203,Maplewood Property,2025-11-21,2133.75,Open
+INV-2025-0195,Bluepeak Consulting,2025-11-23,3721.50,Open
+INV-2025-0196,Eastgate Clinic,2025-11-24,6193.00,Open
+INV-2025-0200,Delta Fabrication,2025-11-24,1395.75,Open
+INV-2025-0201,Northbay Catering,2025-11-24,4128.00,Open
+INV-2025-0202,Maplewood Property,2025-11-24,5091.99,Open
+INV-2025-0190,Ironwood Joinery,2025-11-25,1003.25,Open
+INV-2025-0187,Orchid Wellness,2025-11-26,6361.25,Open
+INV-2025-0188,Northbay Catering,2025-11-26,7056.25,Open
+INV-2025-0189,Bluepeak Consulting,2025-11-28,7855.00,Open
+INV-2025-0215,Harbor & Sons Plumbing,2025-12-02,5475.00,Open
+INV-2025-0218,Ironwood Joinery,2025-12-02,3280.00,Open
+INV-2025-0204,Fernhill Landscaping,2025-12-03,7168.99,Open
+INV-2025-0207,Gridline Electrical,2025-12-05,6084.99,Open
+INV-2025-0209,Lumen Marketing,2025-12-07,4575.75,Open
+INV-2025-0219,Lumen Marketing,2025-12-09,6808.50,Open
+INV-2025-0223,Gridline Electrical,2025-12-09,4136.25,Open
+INV-2025-0206,Acme Interiors,2025-12-12,7032.50,Open
+INV-2025-0217,Eastgate Clinic,2025-12-12,4676.75,Open
+INV-2025-0205,Bluepeak Consulting,2025-12-13,8439.99,Open
+INV-2025-0211,Northbay Catering,2025-12-15,4547.25,Open
+INV-2025-0213,Delta Fabrication,2025-12-16,7763.75,Open
+INV-2025-0216,Delta Fabrication,2025-12-17,5963.25,Open
+INV-2025-0221,Kestrel Logistics,2025-12-17,8191.50,Open
+INV-2025-0220,Maplewood Property,2025-12-19,4087.99,Open
+INV-2025-0214,Kestrel Logistics,2025-12-21,6359.25,Open
+INV-2025-0224,Juniper Design Co,2025-12-23,6196.50,Open
+INV-2025-0210,Orchid Wellness,2025-12-27,8071.50,Open
+INV-2025-0222,Acme Interiors,2025-12-27,1674.25,Open
+INV-2025-0208,Harbor & Sons Plumbing,2025-12-28,2656.50,Open
+INV-2025-0212,Delta Fabrication,2025-12-29,1569.25,Open
+INV-2026-0235,Acme Interiors,2026-01-02,4936.99,Open
+INV-2026-0239,Eastgate Clinic,2026-01-02,7977.00,Open
+INV-2026-0241,Juniper Design Co,2026-01-03,1028.00,Open
+INV-2026-0229,Lumen Marketing,2026-01-04,3183.00,Open
+INV-2026-0236,Kestrel Logistics,2026-01-05,8192.00,Open
+INV-2026-0242,Maplewood Property,2026-01-05,5128.00,Open
+INV-2026-0230,Lumen Marketing,2026-01-07,8083.25,Open
+INV-2026-0228,Bluepeak Consulting,2026-01-08,3305.25,Open
+INV-2026-0243,Bluepeak Consulting,2026-01-08,6968.75,Open
+INV-2026-0233,Corewave Media,2026-01-12,5102.00,Open
+INV-2026-0227,Eastgate Clinic,2026-01-15,5173.25,Open
+INV-2026-0238,Harbor & Sons Plumbing,2026-01-16,5732.00,Open
+INV-2026-0225,Fernhill Landscaping,2026-01-17,7121.99,Open
+INV-2026-0226,Fernhill Landscaping,2026-01-18,5914.99,Open
+INV-2026-0234,Ironwood Joinery,2026-01-23,2223.25,Open
+INV-2026-0231,Juniper Design Co,2026-01-24,4786.00,Open
+INV-2026-0232,Delta Fabrication,2026-01-27,5003.00,Open
+INV-2026-0240,Bluepeak Consulting,2026-01-27,6715.50,Open
+INV-2026-0237,Acme Interiors,2026-01-28,4808.50,Open
+INV-2026-0251,Gridline Electrical,2026-01-31,7531.99,Open
+INV-2026-0259,Acme Interiors,2026-02-02,2868.25,Open
+INV-2026-0257,Ironwood Joinery,2026-02-03,3833.99,Open
+INV-2026-0261,Harbor & Sons Plumbing,2026-02-03,5132.99,Open
+INV-2026-0258,Orchid Wellness,2026-02-04,4502.00,Open
+INV-2026-0249,Eastgate Clinic,2026-02-06,1480.00,Open
+INV-2026-0250,Corewave Media,2026-02-07,1379.00,Open
+INV-2026-0253,Eastgate Clinic,2026-02-07,4782.99,Open
+INV-2026-0255,Orchid Wellness,2026-02-07,4484.99,Open
+INV-2026-0245,Harbor & Sons Plumbing,2026-02-12,7403.25,Open
+INV-2026-0262,Eastgate Clinic,2026-02-12,8349.75,Open
+INV-2026-0247,Juniper Design Co,2026-02-18,1136.75,Open
+INV-2026-0256,Kestrel Logistics,2026-02-18,3391.50,Open
+INV-2026-0252,Harbor & Sons Plumbing,2026-02-19,4921.00,Open
+INV-2026-0260,Lumen Marketing,2026-02-19,4878.50,Open
+INV-2026-0248,Bluepeak Consulting,2026-02-23,3554.99,Open
+INV-2026-0244,Juniper Design Co,2026-02-25,3847.75,Open
+INV-2026-0246,Juniper Design Co,2026-02-27,7175.25,Open
+INV-2026-0254,Harbor & Sons Plumbing,2026-02-27,1316.99,Open
+INV-2026-0277,Delta Fabrication,2026-03-03,6077.75,Open
+INV-2026-0265,Delta Fabrication,2026-03-04,489.99,Open
+INV-2026-0274,Fernhill Landscaping,2026-03-04,4285.25,Open
+INV-2026-0275,Maplewood Property,2026-03-05,6772.75,Open
+INV-2026-0268,Juniper Design Co,2026-03-07,7291.99,Open
+INV-2026-0279,Eastgate Clinic,2026-03-08,2296.25,Open
+INV-2026-0270,Gridline Electrical,2026-03-13,5610.25,Open
+INV-2026-0272,Lumen Marketing,2026-03-15,8267.25,Open
+INV-2026-0263,Bluepeak Consulting,2026-03-16,803.50,Open
+INV-2026-0280,Orchid Wellness,2026-03-16,8091.00,Open
+INV-2026-0267,Ironwood Joinery,2026-03-17,7395.25,Open
+INV-2026-0271,Bluepeak Consulting,2026-03-23,2784.25,Open
+INV-2026-0273,Gridline Electrical,2026-03-23,751.50,Open
+INV-2026-0264,Fernhill Landscaping,2026-03-25,4252.00,Open
+INV-2026-0278,Harbor & Sons Plumbing,2026-03-26,7392.00,Open
+INV-2026-0266,Eastgate Clinic,2026-03-28,809.00,Open
+INV-2026-0269,Harbor & Sons Plumbing,2026-03-28,1644.50,Open
+INV-2026-0276,Acme Interiors,2026-03-28,7719.50,Open
+INV-2026-0289,Northbay Catering,2026-04-05,1293.25,Open
+INV-2026-0282,Eastgate Clinic,2026-04-06,374.75,Open
+INV-2026-0288,Orchid Wellness,2026-04-07,8477.99,Open
+INV-2026-0287,Harbor & Sons Plumbing,2026-04-08,2519.50,Open
+INV-2026-0286,Gridline Electrical,2026-04-09,8055.50,Open
+INV-2026-0292,Lumen Marketing,2026-04-10,5041.75,Open
+INV-2026-0295,Ironwood Joinery,2026-04-11,6330.50,Open
+INV-2026-0283,Bluepeak Consulting,2026-04-14,3831.00,Open
+INV-2026-0284,Bluepeak Consulting,2026-04-15,2672.50,Open
+INV-2026-0294,Ironwood Joinery,2026-04-15,8085.25,Open
+INV-2026-0293,Kestrel Logistics,2026-04-19,8172.00,Open
+INV-2026-0281,Juniper Design Co,2026-04-21,4070.99,Open
+INV-2026-0285,Eastgate Clinic,2026-04-23,8487.99,Open
+INV-2026-0290,Maplewood Property,2026-04-25,6948.25,Open
+INV-2026-0291,Ironwood Joinery,2026-04-26,4527.00,Open
+INV-2026-0301,Corewave Media,2026-05-02,8379.75,Open
+INV-2026-0310,Juniper Design Co,2026-05-02,1271.00,Open
+INV-2026-0307,Northbay Catering,2026-05-03,5533.99,Open
+INV-2026-0303,Ironwood Joinery,2026-05-04,7636.00,Open
+INV-2026-0305,Bluepeak Consulting,2026-05-05,7842.25,Open
+INV-2026-0298,Lumen Marketing,2026-05-11,7899.99,Open
+INV-2026-0302,Northbay Catering,2026-05-11,1794.50,Open
+INV-2026-0306,Juniper Design Co,2026-05-11,6662.99,Open
+INV-2026-0297,Delta Fabrication,2026-05-13,6880.00,Open
+INV-2026-0309,Lumen Marketing,2026-05-21,8144.75,Open
+INV-2026-0311,Kestrel Logistics,2026-05-21,4858.00,Open
+INV-2026-0304,Corewave Media,2026-05-24,6867.99,Open
+INV-2026-0312,Bluepeak Consulting,2026-05-24,7260.00,Open
+INV-2026-0299,Gridline Electrical,2026-05-26,6475.99,Open
+INV-2026-0300,Northbay Catering,2026-05-26,2642.50,Open
+INV-2026-0296,Delta Fabrication,2026-05-28,4062.75,Open
+INV-2026-0308,Ironwood Joinery,2026-05-28,6376.25,Open
+INV-2026-0323,Orchid Wellness,2026-05-31,7772.25,Open
+INV-2026-0332,Juniper Design Co,2026-05-31,953.75,Open
+INV-2026-0315,Fernhill Landscaping,2026-06-01,1069.25,Open
+INV-2026-0321,Delta Fabrication,2026-06-04,7705.99,Open
+INV-2026-0314,Lumen Marketing,2026-06-05,5056.00,Open
+INV-2026-0319,Bluepeak Consulting,2026-06-05,6417.75,Open
+INV-2026-0317,Ironwood Joinery,2026-06-07,6901.75,Open
+INV-2026-0322,Harbor & Sons Plumbing,2026-06-08,4333.99,Open
+INV-2026-0330,Lumen Marketing,2026-06-09,4987.00,Open
+INV-2026-0316,Fernhill Landscaping,2026-06-11,7206.00,Open
+INV-2026-0329,Juniper Design Co,2026-06-12,6031.75,Open
+INV-2026-0326,Lumen Marketing,2026-06-13,4247.50,Open
+INV-2026-0325,Fernhill Landscaping,2026-06-14,5051.99,Open
+INV-2026-0313,Lumen Marketing,2026-06-20,1796.50,Open
+INV-2026-0318,Maplewood Property,2026-06-21,3100.00,Open
+INV-2026-0320,Delta Fabrication,2026-06-21,8303.75,Open
+INV-2026-0324,Ironwood Joinery,2026-06-21,2738.00,Open
+INV-2026-0333,Harbor & Sons Plumbing,2026-06-23,4839.00,Open
+INV-2026-0331,Kestrel Logistics,2026-06-26,6634.25,Open
+INV-2026-0327,Eastgate Clinic,2026-06-27,3413.50,Open
+INV-2026-0328,Harbor & Sons Plumbing,2026-06-27,1897.00,Open
