@@ -23,34 +23,45 @@ This produces:
 These files contain no real customer information. They are safe to commit
 and share.
 
-## De-identification
+## Authorized Pseudonymized Historical Data
 
 If real historical cases must be used for realism:
 
-1. **Remove all customer names** — replace with `customer_001`,
-   `customer_002`, etc.
-2. **Remove all account numbers** — replace with `acct_001`, `acct_002`,
-   etc.
-3. **Remove all email addresses** — replace with `practitioner_N@synthetic.local`.
-4. **Remove all phone numbers** — delete the column or replace with
-   `000-000-0000`.
-5. **Remove all addresses** — delete the column.
-6. **Remove all reference numbers** that could identify a real customer —
-   replace with sequential synthetic identifiers.
-7. **Preserve monetary amounts, dates, and currencies** — these are needed
-   for reconciliation testing but do not identify customers.
+1. **Documented authority required.** The operator must have documented
+   permission to use the data for evaluation purposes. Old data is **not**
+   automatically authorized.
 
-### De-identification Verification
+2. **Pseudonymization required.** All identifying information must be
+   removed or replaced before import:
+   - Customer names → `customer_001`, `customer_002`, etc.
+   - Account numbers → `acct_001`, `acct_002`, etc.
+   - Email addresses → `practitioner_N@synthetic.local`
+   - Phone numbers → delete column or replace with `000-000-0000`
+   - Addresses → delete column
+   - Tax identifiers → delete
+   - Reference numbers that could identify a customer → sequential synthetic IDs
 
-Before importing any de-identified data into LedgerMatch:
+3. **Quasi-identifier awareness.** Exact monetary amounts and dates may
+   remain sensitive quasi-identifiers even after pseudonymization. They are
+   needed for reconciliation but do not guarantee anonymity.
+
+4. **Historical data is described as authorized and pseudonymized**, not
+   automatically anonymous.
+
+### Privacy Scanning
+
+Before importing any pseudonymized data into LedgerMatch:
 
 ```bash
 python3 scripts/verify_pilot_result.py --check-privacy your_data.csv
 ```
 
-This scans for obvious email patterns, long digit sequences (account
-numbers), and common secret patterns. If any are found, the data must be
-re-de-identified before use.
+This scans for obvious email patterns, long digit sequences, and common
+secret patterns. If any are found, the data must be re-pseudonymized
+before use.
+
+**Note:** Regex scanning does not prove de-identification. It is a
+supplementary check, not a guarantee.
 
 ## Local Storage Only
 
@@ -61,15 +72,17 @@ Pilot data must be stored:
 - Never in a cloud-synced folder (Dropbox, Google Drive, OneDrive).
 - Never in a shared network drive accessible to non-pilot participants.
 
-## Data Retention
+## Retention Schedule
 
-- Pilot data should be deleted after the pilot is complete and results are
-  recorded.
-- The pilot results template (`examples/pilot-results-template.csv`)
-  captures the factual measurements. No raw financial data should be in
-  the results file.
-- The `notes` column in the results template must not contain personal or
-  customer information.
+- **Pilot working copies** (pseudonymized CSVs, evidence bundles, review
+  ledgers) should be deleted after the approved retention period (e.g., 90
+  days after pilot completion).
+- **Generated pilot outputs** (evidence bundles, review ledgers, reports)
+  should be deleted after the same retention period.
+- **Original accounting records** must NOT be deleted. The retention
+  schedule applies only to pilot working copies and generated pilot outputs.
+- Only the sanitized result row and validation receipts (PASS/FAIL) are
+  retained by the operator beyond the retention period.
 
 ## What Not to Commit
 
@@ -90,8 +103,7 @@ The following must never appear in any Git repository:
 If real customer data is accidentally committed:
 
 1. **Stop** all pilot activity immediately.
-2. **Contact** the repository owner to force-push the removal (only
-   acceptable for non-main branches with no other consumers).
+2. **Contact** the pilot operator through the incident-reporting channel.
 3. **Rotate** any exposed credentials.
 4. **Document** the incident in `BLOCKERS.md`.
 5. **Do not resume** the pilot until the breach is fully remediated.

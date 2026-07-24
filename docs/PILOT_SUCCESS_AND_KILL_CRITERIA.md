@@ -13,8 +13,10 @@ true, based on actual practitioner-supplied and validated data:
    validated independently.
 3. **Review-ledger validation: 100% pass** — every case's review ledger
    validated independently.
-4. **Correct-candidate retention: ≥ 95%** — the correct candidate was
-   present in the candidate set for at least 95% of cases.
+4. **Correct-candidate retention: ≥ 95%** —
+   sum(correct_candidate_retained_cases) /
+   sum(candidate_expected_cases) ≥ 0.95. If the denominator is zero, this
+   metric is not applicable.
 5. **Conservation: 100%** — no case violated monetary conservation.
 6. **Invoice exclusivity: 100%** — no case reused an invoice across
    multiple deposits.
@@ -23,18 +25,41 @@ true, based on actual practitioner-supplied and validated data:
 
 ### Minimum Sample
 
-8. **At least 5 practitioners** participated.
-9. **At least 30 historical cases** were processed.
-10. **At least 10 grouped or ambiguous cases** were included.
-11. **At least 3 CSV input layouts** were tested.
-12. **Separate runs per currency** were completed for at least 2 currencies.
+8. **At least 5 practitioners** participated (from qualifying real rows).
+9. **At least 30 historical cases** were processed (from qualifying real rows).
+10. **At least 10 grouped or ambiguous cases** were included (from the
+    explicit `genuine_ambiguous_cases` field, not `review_exceptions`).
+11. **At least 3 CSV input layouts** were tested (from unique
+    `input_layout_id` values, not currencies).
+12. **At least 2 currencies** were tested (from unique `currency` values
+    in real rows).
+13. **At least 3 distinct practitioners** contributed ambiguous cases
+    (practitioners with `genuine_ambiguous_cases` > 0).
+14. **No single practitioner** contributed more than 50% of real cases.
 
 ### Signals
 
-13. **Repeat-use request: majority positive** — more than 50% of
-    practitioners requested to use LedgerMatch again.
-14. **Payment or contribution signal: at least one positive** — at least
-    one practitioner indicated willingness to pay or contribute.
+13. **Repeat-use response: majority positive** — more than 50% of
+    practitioners responded `yes` (excluding `undecided`).
+14. **Support signal: at least one positive** — at least one practitioner
+    responded `willing_to_pay` or `willing_to_contribute`.
+
+## Continuation Gate States
+
+The continuation gate is a three-state value:
+
+- **PENDING** when there are zero qualifying real rows.
+- **FAIL** when any kill condition is present.
+- **PASS** when there is at least one qualifying real row and no kill
+  condition.
+
+The overall status is reported as:
+
+- **INSUFFICIENT_SAMPLE** — sample requirements not yet met or no real
+  rows.
+- **KILL_CONDITION** — a kill condition is present.
+- **SAMPLE_MET** — every sample requirement is met and the continuation
+  gate is PASS.
 
 ## Kill Criteria (Immediate Termination)
 
@@ -66,7 +91,7 @@ The continuation gate is a programmatic check implemented in
 - `evidence_validation` is `false` for any case.
 - `review_ledger_validation` is `false` for any case.
 
-The gate does **not** check for positive signals (repeat-use, payment).
+The gate does **not** check for positive signals (repeat-use, support).
 Those are reported as aggregate metrics but do not block continuation.
 
 ## What Success Does Not Mean

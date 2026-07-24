@@ -21,7 +21,7 @@ unzip -l LedgerMatch-0.4.0-review-ledger-source.zip  # 51 entries
 ### 2. Run Baseline Verification
 
 ```bash
-cd LedgerMatch-0.4.0
+cd Ledgermatch
 python3 scripts/verify_release.py
 ```
 
@@ -42,7 +42,7 @@ Create at least three import profiles for the three CSV layouts. See
 
 Each practitioner receives:
 - The verified LedgerMatch source (not a fork — a local copy).
-- Synthetic data files.
+- Synthetic data files or authorized pseudonymized historical data.
 - Import profiles for their assigned layout.
 - The pilot results template (`examples/pilot-results-template.csv`).
 - The pilot case template (`examples/pilot-case-template.json`).
@@ -53,12 +53,13 @@ Each practitioner receives:
 ### Step 1: Import Data
 
 ```bash
-python3 -m app.cli reconcile \
-  --invoices invoices.csv \
-  --deposits bank_statement.csv \
-  --profile profile.json \
-  --currency USD \
-  --out out_pilot/case_001/
+cd Ledgermatch
+python3 -m app.cli \
+  --bank <deposits.csv> \
+  --invoices <invoices.csv> \
+  --out out_pilot/<case_id>/ \
+  --profile <profile.json> \
+  --currency <USD|EUR|...>
 ```
 
 ### Step 2: Review Candidates
@@ -70,40 +71,67 @@ The CLI output presents candidate matches. The practitioner must:
 3. Record the review decision in the review ledger.
 
 ```bash
-python3 -m app.cli review-create \
-  --evidence out_pilot/case_001/evidence_bundle.json \
-  --ledger out_pilot/case_001/review_ledger.jsonl
+python3 -m app.review create \
+  --evidence out_pilot/<case_id>/evidence.json \
+  --decisions out_pilot/<case_id>/review_decisions.json \
+  --out out_pilot/<case_id>/review_ledger.jsonl
 ```
 
 ### Step 3: Validate Evidence and Review Ledger
 
 ```bash
-python3 -m app.cli review-verify \
-  --ledger out_pilot/case_001/review_ledger.jsonl
+python3 -m app.review verify \
+  --evidence out_pilot/<case_id>/evidence.json \
+  --review out_pilot/<case_id>/review_ledger.jsonl \
+  --receipt out_pilot/<case_id>/review_ledger.jsonl.receipt.json
 ```
 
 Both evidence and review-ledger validation must pass.
 
 ### Step 4: Record Results
 
-Enter the case results into the pilot results template CSV:
+Enter the case results into the pilot results template CSV using the v2.0
+schema. See `examples/pilot-results-template.csv` for all required columns.
 
+Key fields:
 - `pilot_case_id` — unique identifier for this case.
-- `practitioner_id` — pseudonymous identifier (e.g., `prac_001`).
-- `currency` — the currency code for this run.
-- `deposits_processed` — number of deposits in the case.
-- `accepted_matches` — number of matches the practitioner approved.
-- `review_exceptions` — number of cases requiring manual exception handling.
-- `false_automatic_allocations` — must be 0 for continuation.
-- `correct_candidate_retained` — `true` if the correct candidate was in the set.
-- `review_minutes_before` — manual reconciliation time.
+- `session_id` — unique identifier for this session.
+- `practitioner_id` — pseudonymous identifier.
+- `role_category` — e.g., accountant, bookkeeper, AR clerk.
+- `data_origin` — `synthetic` or `authorized_pseudonymized_historical`.
+- `direct_reconciliation_experience` — `true`/`false`.
+- `consent_received` — `true`/`false`.
+- `real_participant_attestation` — `true`/`false`.
+- `operator_attestation` — `true`/`false`.
+- `input_layout_id` — identifier for the CSV layout used.
+- `currency` — currency code.
+- `deposits_processed` — number of deposits.
+- `accepted_matches` — number of matches approved.
+- `review_exceptions` — number of exceptions reviewed.
+- `genuine_ambiguous_cases` — count of genuinely ambiguous cases (strict definition).
+- `false_automatic_allocations` — must be 0.
+- `candidate_expected_cases` — cases where a correct candidate was expected.
+- `correct_candidate_retained_cases` — cases where correct candidate was present.
+- `review_minutes_baseline` — manual reconciliation time.
+- `baseline_method` — `measured_counterbalanced`, `measured_matched_case_set`, or `retrospective_estimate`.
 - `review_minutes_with_ledgermatch` — LedgerMatch-assisted time.
-- `evidence_validation` — `true` if evidence bundle validated.
-- `review_ledger_validation` — `true` if review ledger validated.
-- `repeat_use_requested` — `true` if practitioner would use again.
+- `evidence_validation` — `true`/`false`.
+- `review_ledger_validation` — `true`/`false`.
+- `repeat_use_response` — `yes`, `no`, or `undecided`.
 - `recommendation` — `recommend`, `neutral`, or `do_not_recommend`.
-- `payment_or_contribution_signal` — free text, no personal info.
+- `support_signal` — `willing_to_pay`, `willing_to_contribute`, `neither`, or `undecided`.
 - `notes` — free text, no personal or customer info.
+
+## Experiment Design
+
+The pilot must use two comparable case sets per practitioner with
+randomized or counterbalanced ordering. Do not reuse the same solved case
+for both timed workflows. Baseline timing must be recorded before exposure
+to the corresponding LedgerMatch solution.
+
+Retrospective estimates must be labelled as
+`baseline_method = retrospective_estimate` and are excluded from causal
+time-improvement claims.
 
 ## Validating Results
 
@@ -114,16 +142,22 @@ python3 scripts/verify_pilot_result.py examples/pilot-results-template.csv
 ```
 
 The validator will:
-- Check all required columns are present.
-- Validate data types (booleans, integers, decimals, currency codes).
+- Check all required columns are present (v2.0 schema).
+- Validate data types (booleans, integers, enums, currency codes).
 - Reject negative values.
 - Reject duplicate pilot case IDs.
-- Scan notes for privacy violations (emails, account numbers, secrets).
-- Compute aggregate factual metrics.
-- Report unmet minimum sample requirements.
+- Verify accepted_matches + review_exceptions = deposits_processed.
+- Verify genuine_ambiguous_cases ≤ review_exceptions.
+- Verify false_automatic_allocations ≤ accepted_matches.
+- Verify correct_candidate_retained_cases ≤ candidate_expected_cases.
+- Scan ALL text-capable fields for privacy violations.
+- Compute median review times (measured only, retrospective reported separately).
+- Compute candidate retention rate from numerator/denominator.
+- Report unmet minimum sample requirements from real rows only.
 - **Fail** if any false automatic allocation is found.
-- Report evidence and review-ledger failures.
-- Never infer demand from synthetic data.
+- Never count synthetic rows toward real sample requirements.
+- Never count review_exceptions as ambiguous cases.
+- Never count currencies as layouts.
 
 ## Post-Pilot
 
@@ -131,8 +165,9 @@ The validator will:
 2. Merge into a single results file.
 3. Run the validator on the merged file.
 4. Record the aggregate summary.
-5. Delete all local pilot data (evidence bundles, review ledgers, raw CSVs).
-6. Keep only the validated results summary.
+5. Delete pilot working copies and generated outputs after the approved
+   retention period. Do NOT delete original accounting records.
+6. Keep only the validated results summary and validation receipts.
 7. Do not commit raw pilot data to any repository.
 
 ## What Not to Do
@@ -142,3 +177,4 @@ The validator will:
 - Do not claim the pilot passed before actual practitioner data is supplied.
 - Do not claim customer demand, compliance, or hosted security.
 - Do not weaken or skip the continuation gate.
+- Do not instruct practitioners to delete original accounting records.

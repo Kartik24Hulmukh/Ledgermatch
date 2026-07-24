@@ -1,35 +1,45 @@
 {
   "pilot_case_id": "case_001",
+  "session_id": "session_001",
   "practitioner_id": "prac_001",
+  "role_category": "accountant",
+  "data_origin": "authorized_pseudonymized_historical",
+  "direct_reconciliation_experience": true,
+  "consent_received": true,
+  "real_participant_attestation": true,
+  "operator_attestation": true,
+  "input_layout_id": "layout_a",
   "currency": "USD",
-  "input_layout": "layout_a",
-  "invoices_file": "synthetic_invoices.csv",
-  "deposits_file": "synthetic_bank_statement.csv",
+  "invoices_file": "pseudonymized_invoices.csv",
+  "deposits_file": "pseudonymized_bank_statement.csv",
   "profile_file": "profile_usd.json",
   "expected_outcome": {
     "deposits_processed": 10,
     "expected_matches": 8,
     "expected_ambiguous": 2,
-    "expected_exceptions": 0
+    "expected_exceptions": 2
   },
   "review_decisions": [],
-  "evidence_bundle_path": "out_pilot/case_001/evidence_bundle.json",
+  "evidence_bundle_path": "out_pilot/case_001/evidence.json",
   "review_ledger_path": "out_pilot/case_001/review_ledger.jsonl",
   "results": {
     "deposits_processed": null,
     "accepted_matches": null,
     "review_exceptions": null,
+    "genuine_ambiguous_cases": null,
     "false_automatic_allocations": null,
-    "correct_candidate_retained": null,
-    "review_minutes_before": null,
+    "candidate_expected_cases": null,
+    "correct_candidate_retained_cases": null,
+    "review_minutes_baseline": null,
+    "baseline_method": null,
     "review_minutes_with_ledgermatch": null,
     "evidence_validation": null,
     "review_ledger_validation": null
   },
   "practitioner_signals": {
-    "repeat_use_requested": null,
+    "repeat_use_response": null,
     "recommendation": null,
-    "payment_or_contribution_signal": null
+    "support_signal": null
   },
   "notes": ""
 }
