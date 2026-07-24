@@ -31,7 +31,11 @@ true, based on actual practitioner-supplied and validated data:
     explicit `genuine_ambiguous_cases` field, not `review_exceptions`).
 11. **At least 3 CSV input layouts** were tested (from unique
     `input_layout_id` values, not currencies).
-12. **Separate runs per currency** were completed for at least 2 currencies.
+12. **At least 2 currencies** were tested (from unique `currency` values
+    in real rows).
+13. **At least 3 distinct practitioners** contributed ambiguous cases
+    (practitioners with `genuine_ambiguous_cases` > 0).
+14. **No single practitioner** contributed more than 50% of real cases.
 
 ### Signals
 
@@ -39,6 +43,23 @@ true, based on actual practitioner-supplied and validated data:
     practitioners responded `yes` (excluding `undecided`).
 14. **Support signal: at least one positive** — at least one practitioner
     responded `willing_to_pay` or `willing_to_contribute`.
+
+## Continuation Gate States
+
+The continuation gate is a three-state value:
+
+- **PENDING** when there are zero qualifying real rows.
+- **FAIL** when any kill condition is present.
+- **PASS** when there is at least one qualifying real row and no kill
+  condition.
+
+The overall status is reported as:
+
+- **INSUFFICIENT_SAMPLE** — sample requirements not yet met or no real
+  rows.
+- **KILL_CONDITION** — a kill condition is present.
+- **SAMPLE_MET** — every sample requirement is met and the continuation
+  gate is PASS.
 
 ## Kill Criteria (Immediate Termination)
 

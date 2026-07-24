@@ -22,9 +22,11 @@ The pilot must include **at least**:
 |---|---|
 | Practitioners | 5 |
 | Historical cases | 30 |
-| Grouped or ambiguous cases | 10 |
-| CSV input layouts | 3 |
-| Currencies tested | Separate runs per currency |
+| Genuine ambiguous cases | 10 |
+| Input layouts | 3 |
+| Currencies | 2 |
+| Distinct practitioners contributing ambiguous cases | 3 |
+| Maximum share of real cases from any single practitioner | 0.5 |
 
 If any minimum is unmet, the continuation gate reports the shortfall but
 does not fabricate a pass.
@@ -38,8 +40,10 @@ Only rows with **all** of the following qualify as real practitioner evidence:
 - `consent_received` = `true`
 - `real_participant_attestation` = `true`
 - `operator_attestation` = `true`
-- `evidence_validation` = `true`
-- `review_ledger_validation` = `true`
+
+Validation outcomes do not determine whether a case is real. A real case
+with a failed evidence bundle or failed review ledger remains a real case,
+is reported as an adverse case, and sets the continuation gate to FAIL.
 
 - **Real practitioners** are counted from unique `practitioner_id` values
   in qualifying real rows.
@@ -159,6 +163,25 @@ The pilot continuation gate fails if **any** of the following are true:
 - Invoice reuse occurs (the same invoice is allocated to multiple
   deposits).
 - Conservation fails (allocated amounts do not conserve the deposit total).
+
+## Continuation Gate States
+
+The continuation gate is a three-state value:
+
+- **PENDING** when there are zero qualifying real rows.
+- **FAIL** when any kill condition is present (false automatic
+  allocation, evidence validation failure, or review-ledger validation
+  failure in any real case).
+- **PASS** when there is at least one qualifying real row and no kill
+  condition.
+
+The overall status is reported as:
+
+- **INSUFFICIENT_SAMPLE** — sample requirements not yet met or no real
+  rows.
+- **KILL_CONDITION** — a kill condition is present.
+- **SAMPLE_MET** — every sample requirement is met and the continuation
+  gate is PASS.
 
 The gate does **not** pass until actual practitioner data is supplied and
 validated. Synthetic-only runs do not constitute a passed pilot.

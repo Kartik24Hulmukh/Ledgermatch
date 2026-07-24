@@ -181,14 +181,14 @@
       "sha256": "a9ffd1a3f1973fadd24e7be3eb005f5ca40402b45fd5c4a8507297e78c223297"
     },
     {
-      "bytes": 6621,
+      "bytes": 7500,
       "path": "docs/PILOT_PROTOCOL.md",
-      "sha256": "05672382caaee78cb75fdc3fc71433d7393f6d16c0155967b79efa5fe47e456e"
+      "sha256": "e98cd67a78b62573c7fd2eda8a9e18c76d78d416c70cf3c09a0b8b2ad69f84bd"
     },
     {
-      "bytes": 4010,
+      "bytes": 4748,
       "path": "docs/PILOT_SUCCESS_AND_KILL_CRITERIA.md",
-      "sha256": "a621471a4cedcfdf13895f44839c28123fbf1bc535a7a9566e0c08799533d765"
+      "sha256": "ae6c60af7392f6fd8bbabf59ecfface3be92487e0f1536aa6bd069e5ff051509"
     },
     {
       "bytes": 3911,
@@ -246,9 +246,9 @@
       "sha256": "c525e5d8389b27a423823b47ad25b6b67045f0739d1f9e7c95c403aa9653d9a1"
     },
     {
-      "bytes": 25477,
+      "bytes": 25449,
       "path": "scripts/verify_pilot_result.py",
-      "sha256": "e80c897fcfdffb4e21ad7c6960f81ce0fe501bad1c51a471129caf28d38c3e01"
+      "sha256": "bbc1bc7168bd7b0d6edda8733b09b95b7b3e60e4b6253309ff04511a420d7ab8"
     },
     {
       "bytes": 3634,
@@ -264,6 +264,11 @@
       "bytes": 3021,
       "path": "tests/test_csv_evidence.py",
       "sha256": "5b226c8ea665be1d9122037f46e065e29ddf1fd2e206b9d095ab357236ef3b1e"
+    },
+    {
+      "bytes": 4369,
+      "path": "tests/test_doc_consistency.py",
+      "sha256": "469e14e002a56bbde01eb7a815ae8e6746a6ec03c10a0684b30809a91098ed43"
     },
     {
       "bytes": 3565,

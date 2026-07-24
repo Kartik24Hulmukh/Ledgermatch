@@ -630,7 +630,7 @@ def validate_csv(filepath):
         errors.append("CONTINUATION GATE FAILED: review-ledger validation failed for one or more real cases.")
 
     # Also check synthetic rows for kill conditions (they still fail the gate)
-    synth_false = synthetic_agg_total_false = aggregate["synthetic"].get("total_false_automatic_allocations", 0)
+    synth_false = aggregate["synthetic"].get("total_false_automatic_allocations", 0)
     if synth_false > 0:
         has_kill = True
         errors.append("CONTINUATION GATE FAILED: false automatic allocation(s) found in synthetic rows.")
