@@ -1,0 +1,88 @@
+# LedgerMatch Pilot Success and Kill Criteria
+
+## Success Criteria
+
+The pilot is considered **successful** when **all** of the following are
+true, based on actual practitioner-supplied and validated data:
+
+### Factual Measurements
+
+1. **False automatic allocations: 0** — no case where an automatically
+   accepted candidate would have been incorrect.
+2. **Evidence validation: 100% pass** — every case's evidence bundle
+   validated independently.
+3. **Review-ledger validation: 100% pass** — every case's review ledger
+   validated independently.
+4. **Correct-candidate retention: ≥ 95%** — the correct candidate was
+   present in the candidate set for at least 95% of cases.
+5. **Conservation: 100%** — no case violated monetary conservation.
+6. **Invoice exclusivity: 100%** — no case reused an invoice across
+   multiple deposits.
+7. **Ambiguity preservation: 100%** — no ambiguous case was presented as
+   unambiguous.
+
+### Minimum Sample
+
+8. **At least 5 practitioners** participated.
+9. **At least 30 historical cases** were processed.
+10. **At least 10 grouped or ambiguous cases** were included.
+11. **At least 3 CSV input layouts** were tested.
+12. **Separate runs per currency** were completed for at least 2 currencies.
+
+### Signals
+
+13. **Repeat-use request: majority positive** — more than 50% of
+    practitioners requested to use LedgerMatch again.
+14. **Payment or contribution signal: at least one positive** — at least
+    one practitioner indicated willingness to pay or contribute.
+
+## Kill Criteria (Immediate Termination)
+
+The pilot must be **immediately terminated** if **any** of the following
+occur:
+
+1. **Any false automatic allocation** — a candidate that would have been
+   automatically accepted but was incorrect. Zero tolerance.
+2. **Evidence validation failure** that cannot be reproduced as a
+   deterministic defect in the evidence bundler.
+3. **Review-ledger tamper undetected** — a modification to the review
+   ledger that passes validation.
+4. **Conservation violation** — allocated amounts do not conserve the
+   deposit total.
+5. **Invoice reuse** — the same invoice is allocated to multiple deposits.
+6. **Ambiguity hidden** — a case that should be ambiguous is presented as
+   unambiguous.
+7. **Data breach** — real customer data is committed to any repository or
+   shared channel.
+8. **AI authorization** — the AI component authorizes, accepts, rejects,
+   posts, or writes back a financial allocation without human review.
+
+## Continuation Gate
+
+The continuation gate is a programmatic check implemented in
+`scripts/verify_pilot_result.py`. It fails the pilot if:
+
+- `false_automatic_allocations > 0` for any case.
+- `evidence_validation` is `false` for any case.
+- `review_ledger_validation` is `false` for any case.
+
+The gate does **not** check for positive signals (repeat-use, payment).
+Those are reported as aggregate metrics but do not block continuation.
+
+## What Success Does Not Mean
+
+- Success does not mean the product is ready for public deployment.
+- Success does not mean the product is compliant with any regulation.
+- Success does not mean the product is secure for public hosting.
+- Success does not mean customers will adopt the product.
+- Success does not mean the AI component is reliable for autonomous
+  operation.
+- Success means the factual measurements were recorded and the kill
+  criteria were not triggered, based on actual practitioner data.
+
+## What Failure Does Not Mean
+
+- Failure does not mean the product is fundamentally broken.
+- Failure means a specific gate was triggered and must be investigated.
+- The root cause must be identified and documented in `BLOCKERS.md`.
+- At most three corrective loops are allowed before escalating.

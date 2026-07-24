@@ -1,0 +1,35 @@
+{
+  "pilot_case_id": "case_001",
+  "practitioner_id": "prac_001",
+  "currency": "USD",
+  "input_layout": "layout_a",
+  "invoices_file": "synthetic_invoices.csv",
+  "deposits_file": "synthetic_bank_statement.csv",
+  "profile_file": "profile_usd.json",
+  "expected_outcome": {
+    "deposits_processed": 10,
+    "expected_matches": 8,
+    "expected_ambiguous": 2,
+    "expected_exceptions": 0
+  },
+  "review_decisions": [],
+  "evidence_bundle_path": "out_pilot/case_001/evidence_bundle.json",
+  "review_ledger_path": "out_pilot/case_001/review_ledger.jsonl",
+  "results": {
+    "deposits_processed": null,
+    "accepted_matches": null,
+    "review_exceptions": null,
+    "false_automatic_allocations": null,
+    "correct_candidate_retained": null,
+    "review_minutes_before": null,
+    "review_minutes_with_ledgermatch": null,
+    "evidence_validation": null,
+    "review_ledger_validation": null
+  },
+  "practitioner_signals": {
+    "repeat_use_requested": null,
+    "recommendation": null,
+    "payment_or_contribution_signal": null
+  },
+  "notes": ""
+}
