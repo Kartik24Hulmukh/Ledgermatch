@@ -171,6 +171,31 @@
       "sha256": "dc001af1467cb9bdd35b6428ff05a1110cd8c9496d737ab8c5e767900b9133db"
     },
     {
+      "bytes": 3152,
+      "path": "docs/PILOT_DATA_SAFETY.md",
+      "sha256": "51ec5adb0f2a8787c8ebd6061b56cbfa743fb72566c7f027b9350d1b0ac21e1f"
+    },
+    {
+      "bytes": 4548,
+      "path": "docs/PILOT_OPERATOR_GUIDE.md",
+      "sha256": "fc6702fd89d5d2b927f0a3d3f470c37275387d47a22f0ea37be74d565c58eaba"
+    },
+    {
+      "bytes": 5196,
+      "path": "docs/PILOT_PROTOCOL.md",
+      "sha256": "a3169215cdfdeeef44aacb39327a2937591f4dc002bc133174c30a05224c5352"
+    },
+    {
+      "bytes": 3750,
+      "path": "docs/PILOT_SUCCESS_AND_KILL_CRITERIA.md",
+      "sha256": "a4e9b319d0a84903bfc1ab696e6342c2916954e70e26340491b66c649b4d0b2e"
+    },
+    {
+      "bytes": 3911,
+      "path": "docs/PRIVATE_DEPLOYMENT_BOUNDARY.md",
+      "sha256": "bed262800b1d061147949308a61c621962f5afc97bd18862a1d8c91d05cdf6ab"
+    },
+    {
       "bytes": 3511,
       "path": "docs/RESEARCH_2026-07-24.md",
       "sha256": "d4e8d9176d866ef798ac91c2fe09a8c4d092ee7086b1597105ef1a98911dc0f0"
@@ -191,6 +216,16 @@
       "sha256": "5f9be4a754767cd71a3c091177fb211a20b543ab4ebbb0fd0764b486a6b9a228"
     },
     {
+      "bytes": 1054,
+      "path": "examples/pilot-case-template.json",
+      "sha256": "9259b583c0c675ba0f986ce160c302e95903e15b1e265bc6f676ed6d810fde7c"
+    },
+    {
+      "bytes": 320,
+      "path": "examples/pilot-results-template.csv",
+      "sha256": "f65290eb7fbb679428d98bb7eac41ea398e87b95843dc3dfeb23c002c219d48c"
+    },
+    {
       "bytes": 90,
       "path": "examples/profile.json",
       "sha256": "a7975f90856575a7de7fc85e5306b5b21ba236cd1d2622f20bdda076932a3082"
@@ -209,6 +244,11 @@
       "bytes": 2158,
       "path": "scripts/build_release.py",
       "sha256": "c525e5d8389b27a423823b47ad25b6b67045f0739d1f9e7c95c403aa9653d9a1"
+    },
+    {
+      "bytes": 12659,
+      "path": "scripts/verify_pilot_result.py",
+      "sha256": "649e775deb56352085b6e9d579df714014924e7770fc1568e4a79435815b908d"
     },
     {
       "bytes": 3634,
@@ -239,6 +279,11 @@
       "bytes": 5202,
       "path": "tests/test_matcher.py",
       "sha256": "340ba33ab10051a89a0d23127d9d2bddb69f0496a6b0d3c1237843fbc86454e5"
+    },
+    {
+      "bytes": 11811,
+      "path": "tests/test_pilot_result_validation.py",
+      "sha256": "f93f7d7f7e2f275d229dcb00f430b8fe510bd4955eeec58e0ea82adc4df91bff"
     },
     {
       "bytes": 2345,
